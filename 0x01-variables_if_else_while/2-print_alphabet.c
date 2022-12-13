@@ -7,26 +7,12 @@
  * Return: Always 0 (Success)
  */
 int main(void)
-
 {
-	int d;
-
-	for (d = 0; d < 100; d++)
+	char low;
+	for (low = 'a'; low <= 'z'; low++)
 	{
-		putchar((d / 10) + '0');
-
-		putchar((d % 10) + '0');
-		if (d != 99)
-		{
-			putchar(',');
-
-			putchar(' ');
-
-		}
-
+		putchar(low);
 	}
 	putchar('\n');
-
 	return (0);
-
 }
